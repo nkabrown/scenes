@@ -3,3 +3,52 @@
   height: 100%;
   overflow: hidden;
 }
+
+.introduction,
+.presentation {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* First View */
+.fill-01,
+.fill-02 {
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+
+.fill-01 {
+  width: 130%;
+  left: -100%;
+  background-color: #78cfbc; 
+  z-index: 1;
+}
+
+.fill-02 {
+  width: 100%;
+  background-color: #fefbf6; 
+}
+
+/* Second View */
+
+/* CSS Transitions */
+.animate-left {
+  animation-duration: 2s;
+  animation-name: extendLeft;
+}
+
+/* Keyframe Animations */
+@keyframes extendLeft {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(71%);
+    transform: translateX(71%);
+  }
+}
