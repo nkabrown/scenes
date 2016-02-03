@@ -7,6 +7,12 @@ $('div.fill-01').on('click', function() {
 
 // trigger second page transition
 $('div.view-two').on('click', function() {
-  $('div.view-three').addClass('animate-right');
-  $('div.view-three').css('left', '0');
+  $('div.view-three').addClass('animate-right').css('left', '0');
+});
+
+// trigger third page transition
+$('div.view-three').on('click', function() {
+  $('div.view-two').hide();
+  $('div.wing-one').addClass('enter-left').css('left', '0');
+  $('div.wing-two').addClass('enter-right').css('right', '0');
 });

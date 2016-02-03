@@ -43,6 +43,28 @@
   background-color: #6cb4c0;
 }
 
+/* Fourth View */
+.wing-one,
+.wing-two {
+  width: 30%;
+}
+
+.wing-one {
+  height: 100%;
+  background-color: #65a6c2;
+  position: absolute;
+  top: 0;
+  left: -30%;
+}
+
+.wing-two {
+  height: 100%;
+  background-color: #65a6c2;
+  position: absolute;
+  top: 0;
+  right: -30%;
+}
+
 /* CSS Transitions */
 .animate-left {
   animation-duration: 2s;
@@ -51,6 +73,16 @@
 
 .animate-right {
   animation-duration: 1.75s;
+  animation-name: crossRight;
+}
+
+.enter-left {
+  animation-duration: .5s;
+  animation-name: extendLeft;
+}
+
+.enter-right {
+  animation-duration: .5s;
   animation-name: crossRight;
 }
 
@@ -70,6 +102,17 @@
   0% {
     -webkit-transform: translateX(101%);
     transform: translateX(101%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes extendLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
   }
   100% {
     -webkit-transform: translateX(0);
