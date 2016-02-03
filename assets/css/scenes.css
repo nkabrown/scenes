@@ -87,6 +87,52 @@
   margin: 45px auto;
 }
 
+/* Navigation Bar */
+/* adapted from http://stackoverflow.com/questions/26825802/how-to-create-fixed-vertical-navigation */
+.vertical-nav {
+  position: fixed;
+  right: 40px;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.vertical-nav li {
+  list-style: none;
+}
+
+.vertical-nav a {
+  display: inline-block;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.vertical-nav a span {
+  display: inline-block;
+  float: right;
+  -webkit-transform: scale(0.6);
+  transform: scale(0.6);
+}
+
+.vertical-nav a:hover span {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.dot {
+  position: relative;
+  top: 8px;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: #88f0bb;
+  -webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
+  transition: transform 0.2s, background-color 0.5s;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
 /* CSS Transitions */
 .animate-left {
   animation-duration: 2s;
