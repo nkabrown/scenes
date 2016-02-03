@@ -5,7 +5,6 @@
 }
 
 .view-one,
-.view-two,
 .view-five,
 .view-six {
   width: 100%;
@@ -16,23 +15,19 @@
 }
 
 /* First View */
-.fill-01,
-.fill-02 {
+.view-one {
+  width: 100%;
+  background-color: #fefbf6;
+}
+
+/* Second View */
+.view-two {
   position: absolute;
   top: 0;
   height: 100%;
-}
-
-.fill-01 {
-  width: 130%;
+  width: 100%;
   left: -100%;
   background-color: #78cfbc;
-  z-index: 1;
-}
-
-.fill-02 {
-  width: 100%;
-  background-color: #fefbf6;
 }
 
 /* Third View */
@@ -104,7 +99,7 @@
 }
 
 .vertical-nav a {
-  display: inline-block;
+  display: none;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
@@ -126,6 +121,7 @@
   top: 8px;
   height: 12px;
   width: 12px;
+  margin: 5px;
   border-radius: 50%;
   background-color: #88f0bb;
   -webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
@@ -168,12 +164,12 @@
 /* Keyframe Animations */
 @keyframes crossLeft {
   0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
   }
   100% {
-    -webkit-transform: translateX(71%);
-    transform: translateX(71%);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
