@@ -16,3 +16,8 @@ $('div.view-three').on('click', function() {
   $('div.wing-one').addClass('enter-left').css('left', '0');
   $('div.wing-two').addClass('enter-right').css('right', '0');
 });
+
+// trigger fourth page transition
+$('div.wing-one, div.wing-two').on('click', function() {
+  $('div.view-five').show().addClass('animate-up').css('top', '0');
+});
