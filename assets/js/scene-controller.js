@@ -21,3 +21,8 @@ $('div.view-three').on('click', function() {
 $('div.wing-one, div.wing-two').on('click', function() {
   $('div.view-five').show().addClass('animate-up').css('top', '0');
 });
+
+// trigger fifth page transition
+$('div.view-five').on('click', function() {
+  $('div.view-six').addClass('animate-down').css('top', '0');
+});

@@ -6,7 +6,8 @@
 
 .view-one,
 .view-two,
-.view-five {
+.view-five,
+.view-six {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -73,6 +74,19 @@
   display: none;
 }
 
+/* Sixth View */
+.view-six {
+  top: -100%;
+  background-color: #517aca;
+}
+
+.view-six-box {
+  width: 80%;
+  height: 85%;
+  background-color: #fefbf6;
+  margin: 45px auto;
+}
+
 /* CSS Transitions */
 .animate-left {
   animation-duration: 2s;
@@ -96,7 +110,12 @@
 
 .animate-up {
   animation-duration: .75s;
-  animation-name: crossUp;
+  animation-name: bearUp;
+}
+
+.animate-down {
+  animation-duration: .75s;
+  animation-name: bearDown;
 }
 
 /* Keyframe Animations */
@@ -133,7 +152,7 @@
   }
 }
 
-@keyframes crossUp {
+@keyframes bearUp {
   0% {
     -webkit-transform: translateY(100%);
     transform: translateY(100%);
@@ -141,5 +160,16 @@
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0)
+  }
+}
+
+@keyframes bearDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
 }
