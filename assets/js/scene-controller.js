@@ -22,7 +22,7 @@ $('div.view-three').on('click', function() {
 // trigger fourth page transition
 $('div.wing-one, div.wing-two').on('click', function() {
   $('div.view-five').show().addClass('animate-up').css('top', '0');
-  window.setTimeout(function() { $('div.view-three, div.wing-one, div.wing-two').removeClass('enter-left', 'enter-right', 'animate-right').hide(); }, 2000);
+  window.setTimeout(function() { $('div.view-three, div.wing-one, div.wing-two').removeClass('enter-left enter-right animate-right').hide(); }, 2000);
   $('.dot-four').show();
 });
 
